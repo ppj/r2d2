@@ -26,4 +26,9 @@ describe Robot do
       expect(subject.facing).to eq("SOUTH")
     end
   end
+
+  it "sets the default direction to 'NORTH'" do
+    subject.place(1, 5)
+    expect(subject.facing).to eq("NORTH")
+  end
 end
