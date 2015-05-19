@@ -50,4 +50,24 @@ describe Robot do
       expect(subject.report).to eq([5, 3, "NORTH"])
     end
   end
+
+  describe "#turn_left" do
+    subject { Robot.new }
+
+    it "changes direction from 'NORTH' to 'WEST'" do
+      subject.place(0, 0)
+      subject.turn_left
+      expect(subject.report).to eq([0, 0, "WEST"])
+    end
+  end
+
+  describe "#turn_right" do
+    subject { Robot.new }
+
+    it "changes direction from 'NORTH' to 'EAST'" do
+      subject.place(0, 0)
+      subject.turn_right
+      expect(subject.report).to eq([0, 0, "EAST"])
+    end
+  end
 end

@@ -14,4 +14,12 @@ class Robot
   def move
     @y = @y + 1
   end
+
+  def turn_left
+    @facing = "WEST"
+  end
+
+  def turn_right
+    @facing = "EAST"
+  end
 end
