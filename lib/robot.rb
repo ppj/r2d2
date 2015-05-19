@@ -7,7 +7,7 @@ class Robot
     @facing = facing
   end
 
-  def current_place
+  def report
     [@x, @y, @facing]
   end
 end
