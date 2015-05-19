@@ -10,4 +10,8 @@ class Robot
   def report
     [@x, @y, @facing]
   end
+
+  def move
+    @y = @y + 1
+  end
 end

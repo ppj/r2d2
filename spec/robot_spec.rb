@@ -40,4 +40,14 @@ describe Robot do
       expect(subject.report).to eq([3, 2, "NORTH"])
     end
   end
+
+  describe "#move" do
+    subject { Robot.new }
+
+    it "increments Y-coordinate of robot by one" do
+      subject.place(5, 2)
+      subject.move
+      expect(subject.report).to eq([5, 3, "NORTH"])
+    end
+  end
 end
