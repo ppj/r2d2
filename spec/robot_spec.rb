@@ -31,4 +31,13 @@ describe Robot do
     subject.place(1, 5)
     expect(subject.facing).to eq("NORTH")
   end
+
+  describe "#current_place" do
+    subject { Robot.new }
+
+    it "returns the current coordinates and facing-direction of the robot" do
+      subject.place(3, 2)
+      expect(subject.current_place).to eq([3, 2, "NORTH"])
+    end
+  end
 end

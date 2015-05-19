@@ -6,4 +6,8 @@ class Robot
     @y = y
     @facing = facing
   end
+
+  def current_place
+    [@x, @y, @facing]
+  end
 end
