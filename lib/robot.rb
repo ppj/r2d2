@@ -4,4 +4,10 @@ class Robot
   def initialize
     @facing = "NORTH"
   end
+
+  def place(x, y, facing)
+    @x = x
+    @y = y
+    @facing = facing
+  end
 end
