@@ -11,8 +11,8 @@ describe Robot do
       expect(subject.y).to be_nil
     end
 
-    it "initializes facing-direction of robot to 'NORTH'" do
-      expect(subject.facing).to eq("NORTH")
+    it "initializes facing-direction of robot to nil" do
+      expect(subject.facing).to be_nil
     end
   end
 
