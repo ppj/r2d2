@@ -1,2 +1,5 @@
 # Ignore all the vim swap files
 *.swp
+
+# Ignore TODO.md
+TODO.md
