@@ -25,11 +25,11 @@ describe Robot do
       expect(subject.y).to eq(2)
       expect(subject.facing).to eq("SOUTH")
     end
-  end
 
-  it "sets the default direction to 'NORTH'" do
-    subject.place(1, 5)
-    expect(subject.facing).to eq("NORTH")
+    it "sets the default direction to 'NORTH'" do
+      subject.place(1, 5)
+      expect(subject.facing).to eq("NORTH")
+    end
   end
 
   describe "#report" do
