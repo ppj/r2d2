@@ -1,1 +1,1 @@
-require_relative '../lib/robot'
+require 'robot'
